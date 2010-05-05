@@ -1,11 +1,11 @@
 <?php
 
-	class thumbnail extends Extension {
+	class extension_thumbnail extends Extension {
 
 		public function about(){
 			return array(
 				'name' => 'Thumbnail',
-				'version' => '01',
+				'version' => '0.1',
 				'release-date' => '5th May 2010',
 				'author' => array(
 						'name' => 'Ross Cairns',
@@ -31,7 +31,7 @@
 			if ($callback['driver'] == 'publish' && ($callback['context']['page'] == 'index' || $callback['context']['page'] == 'edit')) {
 				$page = Administration::instance()->Page;
 				
-				$page->addScriptToHead(URL . '/extensions/fancy_box/assets/thumbnail.js', 105);
+				$page->addScriptToHead(URL . '/extensions/thumbnail/assets/thumbnail.js', 105);
 			}
 		}
 
