@@ -5,7 +5,7 @@
 		public function about(){
 			return array(
 				'name' => 'Thumbnail',
-				'version' => '0.1',
+				'version' => '0.2',
 				'release-date' => '5th May 2010',
 				'author' => array(
 						'name' => 'Ross Cairns',

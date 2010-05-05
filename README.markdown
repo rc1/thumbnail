@@ -11,7 +11,7 @@ requries the JIT extension to be enabled.
 
 -------------------
 
-- Version: 0.1
+- Version: 0.2
 - Author: Ross Cairns <ross[~~]electricglen.com>
 - Build Date: 5th May 2010
 - Requirements: unsure
