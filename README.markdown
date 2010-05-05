@@ -3,6 +3,12 @@ Thumbnail Extension for Symphony
 
 A Symphony CMS extension showing image thumbnails instead of filenames on the entries listing admin page.  
 
+Status:
+* only tested in Safari
+* image upload field cannot be first shown feild
+
+requries the JIT extension to be enabled.
+
 -------------------
 
 - Version: 0.1
