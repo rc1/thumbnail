@@ -15,20 +15,23 @@
 			);
 		}
 
-		public function getSubscribedDelegates(){
+		public function getSubscribedDelegates()
+		{
 			return array(
 				array(
 					'page' => '/administration/',
 					'delegate' => 'AdminPagePreGenerate',
-					'callback' => 'appendAssets'
+					'callback' => '__appendAssets'
 				)
 			);
 		}
 
-		public function appendAssets($context){
-			$callback = Administration::instance()->getPageCallback();
+		public function __appendAssets($context)
+		{
+			$callback = $this->_Parent->getPageCallback();
 
-			if ($callback['driver'] == 'publish' && ($callback['context']['page'] == 'index' || $callback['context']['page'] == 'edit')) {
+			if ($callback['driver'] == 'publish' && ($callback['context']['page'] == 'index' || $callback['context']['page'] == 'edit'))
+			{
 				$page = Administration::instance()->Page;
 				
 				$page->addScriptToHead(URL . '/extensions/thumbnail/assets/thumbnail.js', 105);
