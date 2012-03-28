@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension id="thumbnail" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Thumbnail</name>
+	<description>A Symphony CMS extension showing image thumbnails instead of filenames on the entries listing admin page.</description>
+	<repo type="github">https://github.com/rc1/thumbnail</repo>
+	<authors>
+		<author>
+			<name github="rc1" symphony="rc1">Full name</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.2.0" date="2010-05-05"/>
+	</releases>
+</extension>
